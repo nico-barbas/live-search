@@ -1,0 +1,17 @@
+{{template "partials/header" .}}
+
+<h1>{{.Title}}</h1>
+<form class="flex" hx-post="/test">
+  <div class="mr-4">
+    <input
+      class="border-indigo-500/30 border-2 rounded"
+      type="text"
+      name="query"
+    />
+  </div>
+  <button class="px-2 bg-indigo-500 border-2 rounded" type="submit">
+    Click Me!
+  </button>
+</form>
+
+{{template "partials/footer" .}}
